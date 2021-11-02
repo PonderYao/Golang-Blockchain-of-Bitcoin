@@ -6,10 +6,10 @@
 
 
 
-### Project Structure
+## Project Structure
 
 ```shell
-├─bin                -- 可执行文件
+├─bin				 -- 可执行文件
 ├─pkg				 -- 静态库文件
 │  └─windows_amd64
 └─src				 -- 源文件
