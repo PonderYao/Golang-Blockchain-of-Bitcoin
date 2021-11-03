@@ -9,11 +9,23 @@
 ## Project Structure
 
 ```shell
-├─bin				 -- 可执行文件
-├─pkg				 -- 静态库文件
-│  └─windows_amd64
-└─src				 -- 源文件
-    ├─coin			 -- 驱动代码：程序入口（main）
-    └─core			 -- 核心代码：区块（Block）、区块链（Blockchain）
+│  README.md
+│
+├─bin
+│      coin.exe      -- 可执行文件
+│
+├─pkg
+│   └─windows_amd64  -- Windows下编译
+│          coin.a          -- 静态库文件
+│
+└─src
+    ├─coin           -- 驱动代码
+    │      main.go         -- 程序入口
+    │
+    └─core           -- 核心代码
+           block.go        -- 区块
+           blockchain.go   -- 区块链
+           proofOfWork.go  -- 工作量证明
+           utils.go        -- 工具方法
 ```
 
