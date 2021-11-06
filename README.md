@@ -12,6 +12,7 @@
 │  README.md
 │
 ├─bin
+│      blockchain.db -- 本地持久化存储数据文件
 │      coin.exe      -- 可执行文件
 │
 ├─pkg
@@ -19,13 +20,24 @@
 │          coin.a          -- 静态库文件
 │
 └─src
+    ├─github.com     -- 相关github库源码引入
+    |   └─boltdb
+    |       └─bolt   -- bolt数据库工具
+    |
     ├─coin           -- 驱动代码
     │      main.go         -- 程序入口
     │
     └─core           -- 核心代码
            block.go        -- 区块
            blockchain.go   -- 区块链
+           client.go       -- 命令解析客户端
            proofOfWork.go  -- 工作量证明
            utils.go        -- 工具方法
 ```
 
+<br>
+
+## Note
+#### 1. About the Bolt Database
+if you would like to test the birth of "Genesis Block", it is suggested to **delete** the file named **blockchain.db** under the package bin by hand.
+如果你想要测试创世纪区块的诞生，建议手动删除`bin`目录下的`blockchain.db`文件
