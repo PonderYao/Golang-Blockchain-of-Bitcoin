@@ -32,12 +32,12 @@
            blockchain.go   -- 区块链
            client.go       -- 命令解析客户端
            proofOfWork.go  -- 工作量证明
+           transaction.go  -- 交易记录
            utils.go        -- 工具方法
 ```
 
-<br>
-
 ## Note
-#### 1. About the Bolt Database
+### 1. About the Bolt Database
 if you would like to test the birth of "Genesis Block", it is suggested to **delete** the file named **blockchain.db** under the package bin by hand.
+<br>
 如果你想要测试创世纪区块的诞生，建议手动删除`bin`目录下的`blockchain.db`文件

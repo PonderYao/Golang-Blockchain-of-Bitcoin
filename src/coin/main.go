@@ -5,9 +5,6 @@ import (
 )
 
 func main() {
-	blockchain := core.NewBlockchain()
-	defer blockchain.Db.Close()
-
-	client := core.Client{blockchain}
+	client := core.Client{}
 	client.Run()
 }

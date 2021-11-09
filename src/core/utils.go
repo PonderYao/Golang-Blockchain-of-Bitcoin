@@ -2,7 +2,6 @@ package core
 
 import (
 	"bytes"
-	"crypto/sha256"
 	"encoding/binary"
 	"log"
 )
@@ -17,12 +16,4 @@ func IntToHex(num int64) []byte {
 		log.Panic(err)
 	}
 	return buff.Bytes()
-}
-
-/*
-DataToHash 对byte字节数组类型的数据进行SHA256哈希计算
- */
-func DataToHash(data []byte) []byte {
-	hash := sha256.Sum256(data)
-	return hash[:]
 }
